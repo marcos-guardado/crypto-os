@@ -5,21 +5,21 @@ import "./CoinItem.css";
 export default function CoinItem({ item }) {
   const { id, symbol, image, name, current_price } = item;
   return (
-    <section id={id} className="card-container">
-      <section>
+    <div id={id} className="card-container">
+      <div>
         <img src={image} alt="crypto currency" width={100} />
-      </section>
-      <section>
-        <section>
+      </div>
+      <div>
+        <div>
           <b>{name}</b>
-        </section>
-        <section>
+        </div>
+        <div>
           <pre>{symbol.toUpperCase()}</pre>
-        </section>
-        <section>
+        </div>
+        <div>
           <pre>${currencyFormatter(current_price)}</pre>
-        </section>
-      </section>
-    </section>
+        </div>
+      </div>
+    </div>
   );
 }

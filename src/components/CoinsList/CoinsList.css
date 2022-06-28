@@ -1,21 +1,6 @@
 .coins-list-container {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 576px) {
-  .coins-list-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-    .coins-list-container {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  }
